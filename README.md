@@ -18,7 +18,6 @@ It serves as my digital resume and a place to highlight my learning journey as a
 
 ## 🚀 Deployment
 This portfolio is deployed on:
-- **Netlify**: [Live Demo](https://yourportfolio.netlify.app)  
 - **GitHub Pages**: [Live Demo](https://yourusername.github.io/portfolio)  
 
 ---

@@ -20,7 +20,3 @@ It serves as my digital resume and a place to highlight my learning journey as a
 This portfolio is deployed on:
 - **GitHub Pages**: [Live Demo](https://yourusername.github.io/portfolio)  
 
----
-
-## 📂 Project Structure
-

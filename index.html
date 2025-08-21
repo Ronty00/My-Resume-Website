@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souvik Baidya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+    <!-- EmailJS for contact form -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SB</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Souvik Baidya</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science Engineer & AI Enthusiast</p>
+                    <p class="hero-description">
+                        Engineering graduate skilled in creating scalable solutions with expertise in AI/ML, 
+                        robotics, and full-stack development. Passionate about building innovative technology 
+                        that makes a difference.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                        </a>
+                        <a href="https://github.com/Ronty00" target="_blank" class="btn btn-secondary">
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="card-inner">
+                            <div class="profile-avatar">
+                                <img src="Souvik Baidya.jpg" alt="Souvik Baidya" class="profile-photo">
+                            </div>
+                            <div class="floating-icons">
+                                <div class="floating-icon" style="--delay: 0s">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 0.5s">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 1s">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 1.5s">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science Engineering graduate from IIIT Kalyani with a passion for 
+                        creating innovative solutions. My journey in technology spans across AI/ML, robotics, 
+                        web development, and mobile applications.
+                    </p>
+                    <p>
+                        I believe in the power of technology to solve real-world problems. Whether it's 
+                        developing AI-powered surveillance systems, creating gesture-controlled drones, 
+                        or building intuitive web applications, I'm always eager to push the boundaries 
+                        of what's possible.
+                    </p>
+                    <div class="education-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🎓</div>
+                            <div class="timeline-content">
+                                <h4>B.Tech in Computer Science & Engineering</h4>
+                                <p>IIIT Kalyani (2021-2025) - GPA: 7.31</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🏢</div>
+                            <div class="timeline-content">
+                                <h4>Vacation Training</h4>
+                                <p>Durgapur Steel Plant - Database Management & Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="20">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Hackathons</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="8">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="python">
+                            <div class="skill-icon">
+                                <i class="devicon-python-plain colored"></i>
+                            </div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-skill="java">
+                            <div class="skill-icon">
+                                <i class="devicon-java-plain colored"></i>
+                            </div>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-skill="c">
+                            <div class="skill-icon">
+                                <i class="devicon-c-plain colored"></i>
+                            </div>
+                            <span class="skill-name">C Language</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-skill="javascript">
+                            <div class="skill-icon">
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="html">
+                            <div class="skill-icon">
+                                <i class="devicon-html5-plain colored"></i>
+                            </div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-skill="css">
+                            <div class="skill-icon">
+                                <i class="devicon-css3-plain colored"></i>
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-skill="react">
+                            <div class="skill-icon">
+                                <i class="devicon-react-original colored"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML & Others -->
+                <div class="skill-category">
+                    <h3>AI/ML & Focus Areas</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="ml">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <span class="skill-name">Machine Learning</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-skill="android">
+                            <div class="skill-icon">
+                                <i class="devicon-android-plain colored"></i>
+                            </div>
+                            <span class="skill-name">Android Development (Beginner)</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-skill="security">
+                            <div class="skill-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span class="skill-name">Ethical Hacking (Beginner)</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- AI Drone Project -->
+                <div class="project-card" data-project="drone">
+                    <div class="project-icon">
+                        <i class="fas fa-drone"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Powered Drone</h3>
+                        <p>
+                            Custom quad-copter inspired by DJI Spark, featuring Pixhawk 2.4.8 and Raspberry Pi 5. 
+                            Enables gesture-based flight control with obstacle avoidance, RC fallback, and real-time 
+                            computer vision capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">PID Control</span>
+                            <span class="tech-tag">Robotics</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge in-progress">In Development</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h4>Technical Features</h4>
+                            <ul>
+                                <li>Gesture-based flight control</li>
+                                <li>Real-time obstacle avoidance</li>
+                                <li>PID tuning for stability</li>
+                                <li>Computer vision integration</li>
+                                <li>Safety protocols & RC fallback</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Surveillance Vehicle -->
+                <div class="project-card" data-project="vehicle">
+                    <div class="project-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Powered Surveillance Vehicle</h3>
+                        <p>
+                            Intelligent surveillance system with ESP32-CAM for real-time streaming and YOLO-based 
+                            object detection. Features robotics-based GPIO control and web APIs for remote operation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ESP32-CAM</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">PyQt5</span>
+                            <span class="tech-tag">Multi-threading</span>
+                        </div>
+                        
+                    </div>
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Real-time video streaming</li>
+                                <li>YOLO object detection</li>
+                                <li>Remote GPIO control</li>
+                                <li>Web API integration</li>
+                                <li>Multi-threaded processing</li>
+                            </ul>
+                            <div class="project-links">
+                            <a href="https://github.com/Ronty00/AI-Powered-Surveillance-Vehicle" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign Language Detection -->
+                <div class="project-card" data-project="sign">
+                    <div class="project-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sign Language Detection</h3>
+                        <p>
+                            Advanced ML system that detects sign language gestures and converts them directly 
+                            into meaningful words and sentences, enabling faster and more natural communication.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        
+                    </div>
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h4>Innovation</h4>
+                            <ul>
+                                <li>Direct gesture-to-sentence translation</li>
+                                <li>No letter-by-letter processing</li>
+                                <li>Real-time recognition</li>
+                                <li>High accuracy ML models</li>
+                                <li>Accessibility focused design</li>
+                            </ul>
+                            <div class="project-links">
+                            <a href="https://github.com/Ronty00/Sign-Language-Detection" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Remote Desktop -->
+                <div class="project-card" data-project="desktop">
+                    <div class="project-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Remote Desktop Access</h3>
+                        <p>
+                            Seamless client-server connection system enabling remote desktop control, 
+                            file management, and secure data transfer between connected systems.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Network Programming</span>
+                            <span class="tech-tag">Socket Programming</span>
+                            <span class="tech-tag">GUI Development</span>
+                            <span class="tech-tag">File Transfer</span>
+                        </div>
+                        
+                    </div>
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h4>Capabilities</h4>
+                            <ul>
+                                <li>Remote desktop control</li>
+                                <li>Secure file transfer</li>
+                                <li>Real-time screen sharing</li>
+                                <li>Cross-platform compatibility</li>
+                                <li>Encrypted connections</li>
+                            </ul>
+                            <div class="project-links">
+                            <a href="https://github.com/Ronty00/Remote-Desktop-Access" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Participation</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>Coca-Cola Disrupt Season 3</h4>
+                    <p>Participated in prestigious innovation challenge</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Xiaomi Ode2Code 3.0</h4>
+                    <p>Competitive programming competition</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>ISRO Hackathon</h4>
+                    <p>Space technology innovation hackathon</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h4>Flipkart Grid 6.0</h4>
+                    <p>E-commerce technology challenge</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h4>ICPC 2022, 2024</h4>
+                    <p>International Collegiate Programming Contest</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>
+                        I'm always interested in discussing new opportunities, 
+                        innovative projects, and collaborations. Feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>souvik05baidya@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9476497252</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Panagarh, West Bengal, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Ronty00" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/souvik-baidya-08a138213/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Souvik Baidya. All rights reserved.</p>
+                <p>Built with 💖 and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
